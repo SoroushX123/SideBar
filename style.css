@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #121212;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: #3949ab;
+  width: 75px;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+body.open .sidebar {
+  width: 240px;
+}
+
+.sidebar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+}
+
+.sidebar-hedear {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding: 0 1.25rem 0 0;
+  border-left: 3px solid transparent;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  color: #f9f9f9;
+}
+
+.sidebar-hedear:hover {
+  border-left: 3px solid #f9f9f9;
+}
+
+.sidebar-burger {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar-burger > i,
+body.open .sidebar-burger {
+  font-size: 25px;
+  color: #f9f9f9;
+  transition: all 0.4s;
+}
+
+.sidebar-burger:hover > i,
+.body.open .sidebar-burger:hover > i {
+  color: #bdbdbd;
+}
+
+.sidebar-logo {
+  height: 25px;
+  opacity: 0;
+  padding-top: 5px;
+  transition: all 0.4s;
+  font-weight: 400;
+}
+
+body.open .sidebar-logo {
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.sidebar-menu {
+  display: grid;
+}
+
+.sidebar-menu > button {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  height: 50px;
+  font-family: "ubuntu";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 2px;
+  padding: 0 23px;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu > button:hover {
+  border-left: 3px solid #f9f9f9;
+  transition: all 0.4s;
+}
+
+.sidebar-menu > button.has-border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu > button > i {
+  color: #f9f9f9;
+  font-size: 25px;
+  transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover > i,
+.sidebar-menu > button:hover > span {
+  color: #bdbdbd;
+}
+
+.sidebar-menu > button > span {
+  color: #f9f9f9;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+body.open .sidebar-menu > button > span {
+  opacity: 1;
+  transition: all 0.4s;
+}
