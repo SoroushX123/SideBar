@@ -2,7 +2,7 @@
 
 An interactive and animated sidebar menu built using pure HTML, CSS, and JavaScript. Fully framework-free with a smooth and modern design ✨
 
-🔗 **Live Demo**: [View Project](https://soroushx123.github.io/sidebar-project/)
+🔗 **Live Demo**: [View Project](https://soroushx123.github.io/SideBar/)
 
 ## ⚙️ Features
 - Toggleable menu button with smooth animations
