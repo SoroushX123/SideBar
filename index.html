@@ -8,66 +8,61 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="sidebar">
-      <div class="sidebar-ineer">
-        <header class="sidebar-hedear">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
           <button
             class="sidebar-burger"
             type="button"
-            onclick="togglesidebar ()"
+            onclick="togglesidebar()"
           >
             <i class="bx bx-menu"></i>
           </button>
           <span class="sidebar-logo">MENU</span>
         </header>
-        <nave class="sidebar-menu">
+        <nav class="sidebar-menu">
           <button type="button">
-            <i class="bx bx-home"></i>
-            <span>Home</span>
+            <i class="bx bx-home"></i><span>Home</span>
           </button>
           <button type="button">
-            <i class="bx bx-user"></i>
-            <span>Accounts</span>
+            <i class="bx bx-user"></i><span>Accounts</span>
           </button>
           <button type="button" class="has-border">
-            <i class="bx bx-cog"></i>
-            <span>Setting</span>
+            <i class="bx bx-cog"></i><span>Setting</span>
           </button>
           <button type="button">
-            <i class="bx bx-coin-stack"></i>
-            <span>Blockchain</span>
+            <i class="bx bx-coin-stack"></i><span>Blockchain</span>
           </button>
           <button type="button">
-            <i class="bx bxs-data"></i>
-            <span>Databases</span>
+            <i class="bx bxs-data"></i><span>Databases</span>
           </button>
           <button type="button">
-            <i class="bx bx-volume-full"></i>
-            <span>AudioVibe</span>
+            <i class="bx bx-volume-full"></i><span>AudioVibe</span>
           </button>
           <button type="button" class="has-border">
-            <i class="bx bx-music"></i>
-            <span>Soundblast</span>
+            <i class="bx bx-music"></i><span>Soundblast</span>
           </button>
           <button type="button">
-            <i class="bx bx-folder"></i>
-            <span>Folders</span>
+            <i class="bx bx-folder"></i><span>Folders</span>
           </button>
           <button type="button">
-            <i class="bx bxs-factory"></i>
-            <span>Levels</span>
+            <i class="bx bxs-factory"></i><span>Levels</span>
           </button>
           <button type="button">
-            <i class="bx bxs-lock"></i>
-            <span>Security</span>
+            <i class="bx bxs-lock"></i><span>Security</span>
           </button>
-        </nave>
+        </nav>
       </div>
     </nav>
-    <script type="text/javascript">
+
+    <script>
       const togglesidebar = () => document.body.classList.toggle("open");
     </script>
   </body>
