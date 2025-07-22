@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background: #121212;
+  font-family: "Ubuntu", sans-serif;
 }
 
 button {
@@ -36,7 +37,7 @@ body.open .sidebar {
   width: 300px;
 }
 
-.sidebar-hedear {
+.sidebar-header {
   width: 240px;
   display: flex;
   align-items: center;
@@ -44,11 +45,11 @@ body.open .sidebar {
   padding: 0 1.25rem 0 0;
   border-left: 3px solid transparent;
   background: rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
   color: #f9f9f9;
+  transition: all 0.4s;
 }
 
-.sidebar-hedear:hover {
+.sidebar-header:hover {
   border-left: 3px solid #f9f9f9;
 }
 
@@ -56,19 +57,19 @@ body.open .sidebar {
   width: 70px;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .sidebar-burger > i,
-body.open .sidebar-burger {
+body.open .sidebar-burger > i {
   font-size: 25px;
   color: #f9f9f9;
   transition: all 0.4s;
 }
 
 .sidebar-burger:hover > i,
-.body.open .sidebar-burger:hover > i {
+body.open .sidebar-burger:hover > i {
   color: #bdbdbd;
 }
 
@@ -76,13 +77,12 @@ body.open .sidebar-burger {
   height: 25px;
   opacity: 0;
   padding-top: 5px;
-  transition: all 0.4s;
   font-weight: 400;
+  transition: all 0.4s;
 }
 
 body.open .sidebar-logo {
   opacity: 1;
-  transition: all 0.4s;
 }
 
 .sidebar-menu {
@@ -94,18 +94,17 @@ body.open .sidebar-logo {
   gap: 22px;
   align-items: center;
   height: 50px;
-  font-family: "ubuntu";
   font-size: 22px;
   font-weight: 400;
-  letter-spacing: 2px;
-  line-height: 2px;
+  letter-spacing: 1px;
+  line-height: 1;
   padding: 0 23px;
   border-left: 3px solid transparent;
+  transition: all 0.4s;
 }
 
 .sidebar-menu > button:hover {
   border-left: 3px solid #f9f9f9;
-  transition: all 0.4s;
 }
 
 .sidebar-menu > button.has-border {
@@ -133,5 +132,4 @@ body.open .sidebar-logo {
 
 body.open .sidebar-menu > button > span {
   opacity: 1;
-  transition: all 0.4s;
 }
